@@ -14,11 +14,13 @@ Team Name: Autumn Lovers
 - Converted them into text files using Beautifulsoup and PyPDF2
 - Got rid of PII from HTML files using Beautifulsoup
 - Began implementation of the front end of chrome extension
+- Implement the BM25 ranking function
 
 ### Remaining Tasks
-- Implement the BM25 ranking function
 - Finish the front end of the Google Chrome extension
 - Show blurbs of the related content to the query for the top k results 
+- Rename document titles
+- Verify results
 - Make the final presentation
 
 ### Challenges/issues

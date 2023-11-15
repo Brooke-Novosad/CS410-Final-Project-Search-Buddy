@@ -17,3 +17,4 @@ for filename in os.listdir(html_dir):
     for i in soup.find_all('div', {'class': 'css-1shylkf'}):
         for p in i.find('div', {'class': 'phrases'}):
             out_f.write(p.text)
+

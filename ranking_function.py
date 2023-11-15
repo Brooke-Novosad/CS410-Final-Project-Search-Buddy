@@ -1,73 +1,54 @@
 import math
 import sys
 import time
-import metapy
-import pytoml
+# import metapy
+# import pytoml
 import os
+import io
+import numpy as np
+from rank_bm25 import BM25Okapi
 
-def load_ranker(cfg_file):
-    """
-    Use this function to return the Ranker object to evaluate, 
-    The parameter to this function, cfg_file, is the path to a
-    configuration file used to load the index.
-    """
-    return metapy.index.OkapiBM25(1.2, .75, 500.0)
+file_idx = 0
+file_name_map = {}
 
-def search(top_k):
+slides = "lecture_slides_extractions"
+transcripts = "lecture_transcripts"
+
+documents = []
+
+for filename in os.listdir(transcripts):
+    fp = os.path.join(transcripts, filename)
+    in_f = open(fp)
+    file_name_map[file_idx] = filename
+    doc = ""
+    for num, line in enumerate(in_f):
+        doc = doc + line.lower().strip() + " "
+    documents.append(doc)
+    file_idx += 1
     
-    slides = "lecture_slides_extractions"
-    transcripts = "lecture_transcripts"
+for filename in os.listdir(slides):
+    fp = os.path.join(slides, filename)
+    in_f = io.open(fp, encoding='UTF-16')
+    file_name_map[file_idx] = filename
+    doc = ""
+    for num, line in enumerate(in_f):
+        doc = doc + line.lower().strip() + " "
+    documents.append(doc)
+    file_idx += 1
 
-    documents = []
-    # for filename in os.listdir(transcripts):
-    #     in_f = os.path.join(transcripts, filename)
-    #     doc = ""
-    #     for num, line in enumerate(in_f):
-    #         doc = doc + line
-    #     documents.append(doc)
-        
-    for filename in os.listdir(slides):
-        in_f = os.path.join(slides, filename)
-        doc = ""
-        for num, line in enumerate(in_f):
-            doc = doc + line
-        documents.append(doc)
+tokenized_corpus = [doc.split(" ") for doc in documents]
 
-    return documents
+bm25 = BM25Okapi(tokenized_corpus)
 
-docs = search(10)
-print(docs)
+def search(query, top_k):
 
-    
+    tokenized_query = query.split(" ")
 
+    doc_scores = bm25.get_scores(tokenized_query)
 
+    return np.argsort(doc_scores)[::-1][:top_k]
 
+idx = search("inverse document frequency", 10)
 
-
-
-
-
-
-
-    # cfg = "config.toml"
-    # idx = metapy.index.make_inverted_index(cfg)
-    # ranker = load_ranker(cfg)
-
-    # with open(cfg, 'r') as fin:
-    #     cfg_d = pytoml.load(fin)
-
-    # query_cfg = cfg_d['query-runner']
-    # if query_cfg is None:
-    #     print("query-runner table needed in {}".format(cfg))
-    #     sys.exit(1)
-
-    # query_path = query_cfg.get('query-path', 'queries.txt')
-
-    # query = metapy.index.Document()
-
-    # with open(query_path) as query_file:
-    #     line = query_path.readline()
-    #     query.content(line.strip())
-    #     results = ranker.score(idx, query, top_k)
-    
-    
+for i in idx:
+    print(file_name_map[i])
