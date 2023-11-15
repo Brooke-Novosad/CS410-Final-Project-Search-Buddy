@@ -1,8 +1,14 @@
+# Project Proposal
+
+### Team
 Team Members: Joanna Huang (joannah2), Drshika Asher (drshika2), Brooke Novosad (novosad3), Rainy Yan (yuzheng9)
+
 Team Captain: Brooke Novosad (novosad3)
+
 Team Name: Autumn Lovers
 
-Topic: Chrome extension to scrape Coursera content (lecture transcript, slides) for CS 410 and provide the top k documents relating to the query as well as the specific relevant sections in the documents.
+### Topic
+Chrome extension to scrape Coursera content (lecture transcript, slides) for CS 410 and provide the top k documents relating to the query as well as the specific relevant sections in the documents.
 
 1. Briefly describe any datasets, algorithms or techniques you plan to use
 	Dataset: Scraping CS410 Lecture Transcripts and slides for the corpus using BeautifulSoup.
