@@ -2,13 +2,22 @@ console.log("hi");
 const f = document.getElementById('form');
 const q = document.getElementById('query');
 
+function postData(input) {
+  $.ajax({
+      type: "POST",
+      url: "/ranking_function.py",
+      data: { param: input },
+      success: callbackFunc
+  });
+
+}
 function submitted(event) {
   event.preventDefault();
   const query = q.value;
   console.log(query);
   search_animal();
 }
-
+postData('start');
 f.addEventListener('submit', submitted);
 
 function search_animal() { 
