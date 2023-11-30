@@ -2,6 +2,7 @@
 from flask import Flask, render_template, request
 import os
 import io
+import re
 import ranking_function
 
 
@@ -63,6 +64,15 @@ def runApp():
 			query = request.form['query']
 			results = ranking_function.search(query, file_name_map, bm25)
 			descriptions = generateBlurbs(results)
+			
+			for i in range(len(results)):
+				curr_doc = re.sub(".txt", "", results[i])
+				curr_doc = re.split("-", curr_doc)[0]
+				split_hyp = re.split("_", curr_doc)
+				
+				if len(split_hyp) > 1:
+					results[i] = " ".join(split_hyp)
+	
 			return render_template('answer.html', 
 							result1=results[0],
 							description1 =descriptions[0],
