@@ -6,7 +6,17 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
 </head>
 <body>
-	<h1>Search Results</h1>
+    <div style="display: grid; grid-template-columns: 20% 80%; justify-items: center;">
+        <button style="height: fit-content; " onclick="goBack()">Go Back</button>
+
+        <script>
+        function goBack() {
+            window.history.back();
+        }
+        </script>
+
+	    <h1>Search Results</h1>
+   </div>
 	<ul>
         <li><strong>{{result1}}</strong></li>
         <li>{{description1}}</li>
