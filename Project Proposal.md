@@ -10,6 +10,8 @@ Team Name: Autumn Lovers
 ### Topic
 Chrome extension to scrape Coursera content (lecture transcript, slides) for CS 410 and provide the top k documents relating to the query as well as the specific relevant sections in the documents.
 
+EDIT 11/30/23: We decided to switch routes and do a Website over a Chrome Extension due to the issues with running python in a HTML/JS environment. This does not affect the key functionality of the app: searching for CS410 study materials. 
+
 1. Briefly describe any datasets, algorithms or techniques you plan to use
 	Dataset: Scraping CS410 Lecture Transcripts and slides for the corpus using BeautifulSoup.
 	Algorithms: We will use BM25 for the search algorithm.
