@@ -6,16 +6,29 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
 </head>
 <body>
-	<h1>Search Results</h1>
-	<h2>1. {{result1}}</h2>
-    <h2>2. {{result2}}</h2>
-    <h2>3. {{result3}}</h2>
-    <h2>4. {{result4}}</h2>
-    <h2>5. {{result5}}</h2>
-    <h2>6. {{result6}}</h2>
-    <h2>7. {{result7}}</h2>
-    <h2>8. {{result8}}</h2>
-    <h2>9. {{result9}}</h2>
-    <h2>10. {{result10}}</h2>
+
+    <div style="display: grid; grid-template-columns: 20% 80%; justify-items: center;">
+        <button style="height: fit-content; " onclick="goBack()">Go Back</button>
+
+        <script>
+        function goBack() {
+            window.history.back();
+        }
+        </script>
+
+	    <h1>Search Results</h1>
+   </div>
+
+	<h3>1. {{result1}}</h3>
+    <h3>2. {{result2}}</h3>
+    <h3>3. {{result3}}</h3>
+    <h3>4. {{result4}}</h3>
+    <h3>5. {{result5}}</h3>
+    <h3>6. {{result6}}</h3>
+    <h3>7. {{result7}}</h3>
+    <h3>8. {{result8}}</h3>
+    <h3>9. {{result9}}</h3>
+    <h3>10. {{result10}}</h3>
+
 </body>
 </html>

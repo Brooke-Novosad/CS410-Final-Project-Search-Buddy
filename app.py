@@ -6,8 +6,6 @@ import ranking_function
 # Create the Flask instance and pass the Flask constructor the path of the correct module
 app = Flask(__name__)
 
-
-
 @app.route('/', methods=['GET', 'POST'])
 def runApp():
 	file_name_map, documents, bm25 = ranking_function.startup()
