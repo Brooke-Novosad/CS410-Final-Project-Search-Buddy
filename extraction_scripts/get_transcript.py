@@ -1,5 +1,6 @@
 import os
 from bs4 import BeautifulSoup
+#Scrapes the lecture transcripts for valid text and puts in corresponding extracted document
 
 html_dir = "html_files"
 trans_dir = "lecture_transcripts"
@@ -17,4 +18,3 @@ for filename in os.listdir(html_dir):
     for i in soup.find_all('div', {'class': 'css-1shylkf'}):
         for p in i.find('div', {'class': 'phrases'}):
             out_f.write(p.text)
-

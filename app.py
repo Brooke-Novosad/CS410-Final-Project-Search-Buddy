@@ -5,10 +5,10 @@ import io
 import re
 import ranking_function
 
-
 # Create the Flask instance and pass the Flask constructor the path of the correct module
 app = Flask(__name__)
 
+#This function generates the blurbs for each document by taking 150 characters in the middle of the document
 def generateBlurbs(results):
 	slides = "lecture_slides_extractions"
 	transcripts = "lecture_transcripts"
@@ -30,8 +30,7 @@ def generateBlurbs(results):
 							curchar+=1
 							blurb+= c
 			blurblist.append(blurb)
-					
-					
+								
 		else:
 			#slide
 			fp = os.path.join(slides, r)
@@ -50,17 +49,15 @@ def generateBlurbs(results):
 			blurblist.append(blurb)
 	return blurblist 
 
-
 @app.route('/', methods=['GET', 'POST'])
 def runApp():
 	file_name_map, documents, bm25 = ranking_function.startup()
-# If method is POST, get the query entered by user
-# Use the ranker to get the top 10 documents and render the document names on the webpage
+	# If method is POST, get the query entered by user
+	# Use the ranker to get the top 10 documents and render the document names on the webpage
 	if request.method == 'POST':
 		if(request.form['query'] == ''):
 			return "<html><body> <h1>Invalid number</h1></body></html>"
 		else:
-			# placeholder just multiplies the number for now
 			query = request.form['query']
 			results = ranking_function.search(query, file_name_map, bm25)
 			descriptions = generateBlurbs(results)

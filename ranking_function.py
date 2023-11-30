@@ -6,6 +6,8 @@ import io
 import numpy as np
 from rank_bm25 import BM25Okapi
 
+#Run once on start of website
+#Takes the extracted text from the lecture slides and transcripts and puts them in a map
 def startup():
 
     file_name_map = {}
@@ -42,6 +44,8 @@ def startup():
 
     return file_name_map, documents, bm25
 
+#Using the BM25Okapi on the documents with the user inputted query
+#We return the top 10 documents that match the query
 def search(query,file_name_map, bm25):
     top_k = 10
 
