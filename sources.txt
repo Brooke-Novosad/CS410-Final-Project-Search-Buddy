@@ -1,3 +1,4 @@
 search bar - https://www.w3schools.com/howto/howto_css_searchbar.asp
 bm 25 - https://stackoverflow.com/questions/61877065/implementation-of-okapi-bm25-in-python
 front end - https://www.geeksforgeeks.org/search-bar-using-html-css-and-javascript/
+flask - https://www.geeksforgeeks.org/flask-http-method/?ref=lbp
