@@ -1,23 +1,50 @@
 # CS 410 Search Buddy
 
-**Team Members:** Joanna Huang (joannah2), Drshika Asher (drshika2), Brooke Novosad (novosad3), Rainy Yan (yuzheng9)
-**Team Captain:** Brooke Novosad (novosad3)
-**Team Name:** Autumn Lovers
+![](https://github.com/https://github.com/drshika/CS410-Final-Project/demo.gif)
+
+**Team Members:** Joanna Huang (joannah2), Drshika Asher (drshika2), Brooke Novosad (novosad3), Rainy Yan (yuzheng9)   
+**Team Captain:** Brooke Novosad (novosad3)   
+**Team Name:** Autumn Lovers   
 
 **Project Description:** Our application allows you to enter any CS410 related search query to find the 10 most relevant course materials (CS410 Lecture Transcripts and Slides) to match your query. 
 
 ## Installation
+0. Have python3 and pip installed: [install python](https://packaging.python.org/en/latest/tutorials/installing-packages/)
 
-Install with pip:
+1. Clone Repository Locally
+
+HTTPS
+```
+$ git clone https://github.com/drshika/CS410-Final-Project.git
+```
+SSH
+```
+$ git clone git@github.com:drshika/CS410-Final-Project.git
+```
+
+2. Install requirements with pip:
 
 ```
 $ pip install -r requirements.txt
 ```
 
-Run the app on localhost:
+3. Run the app on localhost:
 ```
 $ python app.py
 ```
+or 
+```
+$ flask run
+```
+4. Open in browser
+
+```CS410-Final-Project git:(main) ✗ python3 app.py
+ * Serving Flask app 'app'
+ * Debug mode: on
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5000
+```
+Paste `http://127.0.0.1:5000` (or whatever port address it assigns) into your browser to view the webpage. 
 
 ## Libraries Used
 
@@ -43,3 +70,17 @@ $ python app.py
 | |────home.html
 |──────app.py
 ```
+
+## Team Contributions
+
+1. Proposal preparation and revision (5hrs) - all
+2. Project scoping and approach analysis (5hrs) -all
+3. Collect all documents in CS 410 Coursera (5 hrs) - Brooke, Drshika, Joanna
+4. Data clean up (tokenization, remove stop words, etc.) (20 hrs - verification by hand included) - Brooke, Rainy, Drshika, Joanna
+5. Data processing, analysis, & storage (5 hrs) - Brooke, Rainy, Joanna
+6. Website
+7. Frontend (5hrs) - Drshika
+8. Backend (5hrs) - Brooke, Rainy, Drshika, Joanna
+9. Data routing (10hrs) - Brooke, Rainy, Drshika
+10. Search algorithms (5hrs) - Brooke, Rainy, Joanna
+11. Summarization blurb for each query (5 hrs) - Brooke, Joanna

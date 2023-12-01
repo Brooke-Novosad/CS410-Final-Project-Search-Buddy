@@ -99,4 +99,4 @@ def runApp():
 # Start with flask web app with debug as True only 
 # if this is the starting page
 if(__name__ == "__main__"):
-	app.run(debug=True)
+	app.run(debug=False)
