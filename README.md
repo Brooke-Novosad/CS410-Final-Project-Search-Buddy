@@ -58,17 +58,26 @@ Paste `http://127.0.0.1:5000` (or whatever port address it assigns) into your br
 ## Application Structure 
 
 ```.
-|──────extraction_scripts/
-| |──────get_pdf.py
-| |──────get_transcripts.py
-|──────html_files/
-|──────lecture_slides/
-|──────lecture_slides_extractions/
-|──────lecture_transcripts/
-|──────templates/
-| |────answer.html
-| |────home.html
-|──────app.py
+├────── extraction_scripts/             # Scripts used to process raw HTML lecture transcripts and slides
+│      ├── get_pdf.py                   # Scrapes lecture slide PDFs
+│      └── get_transcripts.py           # Scrapes lecture Transcripts
+├───── html_files/                      # Raw HTML files from CS410 Coursera Website
+├───── lecture_slides/                  # CS410 PDF lecture slides
+├───── lecture_slides_extractions/      # Text from CS410 lecture slides
+├───── lecture_transcripts/             # Transcripts from CS410 lecture videos
+├───── static/images                    # Images used in this repository
+├───── project_docs/                    # Misc Project Docs
+│     ├── Project Progress Report.md
+│     ├── Project Proposal.md
+│     └── sources.txt                   # Reference Code Documentation
+├───── templates/                       # HTML template pages       
+│     ├── answer.html                   # Query response page
+│     └── home.html                     # Home page
+├───── .gitignore
+├───── app.py                           # Main Flask driver code
+├───── ranking_function.py              # Utility function to return ranked documents
+├───── README.md
+└───── requirements.txt                 # Used to install required python libraries
 ```
 
 ## Team Contributions
