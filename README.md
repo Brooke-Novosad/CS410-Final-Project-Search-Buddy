@@ -1,6 +1,8 @@
 # CS 410 Search Buddy
 
-![](https://github.com/https://github.com/drshika/CS410-Final-Project/demo.gif)
+[Go to Installation](#installation)   
+[Go to Libraries/Frameworks Used](#libraries)   
+[Go to Application Structure](#structure)   
 
 **Team Members:** Joanna Huang (joannah2), Drshika Asher (drshika2), Brooke Novosad (novosad3), Rainy Yan (yuzheng9)   
 **Team Captain:** Brooke Novosad (novosad3)   
@@ -8,8 +10,10 @@
 
 **Project Description:** Our application allows you to enter any CS410 related search query to find the 10 most relevant course materials (CS410 Lecture Transcripts and Slides) to match your query. 
 
+![](https://github.com/drshika/CS410-Final-Project/blob/main/static/images/demo.gif)
+
 ## Installation
-0. Have python3 and pip installed: [install python](https://packaging.python.org/en/latest/tutorials/installing-packages/)
+0. Have python3 and pip installed: [tutorial](https://packaging.python.org/en/latest/tutorials/installing-packages/)
 
 1. Clone Repository Locally
 
@@ -46,7 +50,7 @@ WARNING: This is a development server. Do not use it in a production deployment.
 ```
 Paste `http://127.0.0.1:5000` (or whatever port address it assigns) into your browser to view the webpage. 
 
-## Libraries Used
+## Libraries
 
 - [**Rank_bm25:**](https://github.com/dorianbrown/rank_bm25) this library has the Okapi BM25 ranking function to get the 10 most relevant document names.
 - [**Flask:**](https://flask.palletsprojects.com/en/3.0.x/) this is a framework used to make GET and POST requests for the user query and the search results from our backend.
@@ -55,7 +59,7 @@ Paste `http://127.0.0.1:5000` (or whatever port address it assigns) into your br
 - [**PyPDF2:**](https://pypi.org/project/PyPDF2/) This library was used to scrape PDFs into text.
 
 
-## Application Structure 
+## Structure 
 
 ```.
 ├────── extraction_scripts/             # Scripts used to process raw HTML lecture transcripts and slides
