@@ -8,7 +8,7 @@
 **Team Captain:** Brooke Novosad (novosad3)   
 **Team Name:** Autumn Lovers   
 
-**Project Description:** Our application allows you to enter any CS410 related search query to find the 10 most relevant course materials (CS410 Lecture Transcripts and Slides) to match your query. 
+**Project Description:** Our application allows you to enter any CS410 related search query to find the 10 most relevant course materials (CS410 Lecture Transcripts and Slides) with blurbs to match your query. 
 
 ![](https://github.com/drshika/CS410-Final-Project/blob/main/static/images/demo.gif)
 
@@ -90,10 +90,10 @@ Paste `http://127.0.0.1:5000` (or whatever port address it assigns) into your br
 2. Project scoping and approach analysis (5hrs) -all
 3. Collect all documents in CS 410 Coursera (5 hrs) - Brooke, Drshika, Joanna
 4. Data clean up (tokenization, remove stop words, etc.) (20 hrs - verification by hand included) - Brooke, Rainy, Drshika, Joanna
-5. Data processing, analysis, & storage (5 hrs) - Brooke, Rainy, Joanna
+5. Data processing, analysis, & storage (5 hrs) - Brooke, Rainy
 6. Website
 7. Frontend (5hrs) - Drshika
 8. Backend (5hrs) - Brooke, Rainy, Drshika, Joanna
 9. Data routing (10hrs) - Brooke, Rainy, Drshika
-10. Search algorithms (5hrs) - Brooke, Rainy, Joanna
-11. Summarization blurb for each query (5 hrs) - Brooke, Joanna
+10. Search algorithms (5hrs) - Brooke, Rainy
+11. Summarization blurb for each query (5 hrs) - Brooke
