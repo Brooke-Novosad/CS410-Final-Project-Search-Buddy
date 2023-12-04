@@ -83,3 +83,9 @@ def test_LongQuery():
         results = ranking_function.search("lessons that include information about clustering", file_name_map, bm25)
         assert results == testresults
         assert len(results) == 10
+
+def test_ShortQuery():
+        testresults = ['lesson3.4.txt', 'Lesson 3.4_ Evaluation of TR Systems - Evaluating Ranked Lists - Part 2 _ Coursera_result.txt', 'lesson6.1.txt', 'Lesson 3.5_ Evaluation of TR Systems - Multi-Level Judgements _ Coursera_result.txt', 'Lesson 6.1_ Learning to Rank - Part 1 (OPTIONAL) _ Coursera_result.txt', '11.4 Text Categorization_ Evaluation Part 2 _ Coursera_result.txt', 'Lesson 1.6_ Vector Space Retrieval Model - Simplest Instantiation _ Coursera_result.txt', 'Lesson 5.1_ Feedback in Text Retrieval _ Coursera_result.txt', 'Lesson 6.3_ Learning to Rank - Part 3 (OPTIONAL) _ Coursera_result.txt', 'Lesson 1.4_ Overview of Text Retrieval Methods _ Coursera_result.txt']
+        results = ranking_function.search("rank", file_name_map, bm25)
+        assert results == testresults
+        assert len(results) == 10

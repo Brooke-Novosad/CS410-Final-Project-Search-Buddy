@@ -89,7 +89,7 @@ Paste `http://127.0.0.1:5000` (or whatever port address it assigns) into your br
 1. Proposal preparation and revision (5hrs) - all
 2. Project scoping and approach analysis (5hrs) -all
 3. Collect all documents in CS 410 Coursera (5 hrs) - Brooke, Drshika, Joanna
-4. Data clean up (tokenization, remove stop words, etc.) (20 hrs - verification by hand included) - Brooke, Rainy, Drshika, Joanna
+4. Data clean up (tokenization, remove stop words, etc.) (20 hrs - verification by hand included) - Brooke, Rainy, Drshika
 5. Data processing, analysis, & storage (5 hrs) - Brooke, Rainy
 6. Website
 7. Frontend (5hrs) - Drshika
