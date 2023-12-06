@@ -56,7 +56,8 @@ Paste `http://127.0.0.1:5000` (or whatever port address it assigns) into your br
 - [**Flask:**](https://flask.palletsprojects.com/en/3.0.x/) this is a framework used to make GET and POST requests for the user query and the search results from our backend.
 - [**Numpy:**](https://pypi.org/project/numpy/) this library was used to sort the outputted list from most to least relevant.
 - [**BeautifulSoup:**](https://pypi.org/project/beautifulsoup4/) this library was used to parse the HTML web pages from the CS410 course website to get the documents that users can search for. 
-- [**PyPDF2:**](https://pypi.org/project/PyPDF2/) This library was used to scrape PDFs into text.
+- [**PyPDF2:**](https://pypi.org/project/PyPDF2/) this library was used to scrape PDFs into text.
+- [**Pytest**](https://docs.pytest.org/en/7.1.x/getting-started.html) this was used to test our program
 
 
 ## Structure 
@@ -81,6 +82,7 @@ Paste `http://127.0.0.1:5000` (or whatever port address it assigns) into your br
 ├───── app.py                           # Main Flask driver code
 ├───── ranking_function.py              # Utility function to return ranked documents
 ├───── README.md
+├───── test_pytest.py                   # Tests different queries against hand calulated rankings
 └───── requirements.txt                 # Used to install required python libraries
 ```
 
@@ -93,7 +95,7 @@ Paste `http://127.0.0.1:5000` (or whatever port address it assigns) into your br
 5. Data processing, analysis, & storage (5 hrs) - Brooke, Rainy
 6. Website
 7. Frontend (5hrs) - Drshika
-8. Backend (5hrs) - Brooke, Rainy, Drshika, Joanna
+8. Backend (5hrs) - Brooke, Rainy, Drshika
 9. Data routing (10hrs) - Brooke, Rainy, Drshika
 10. Search algorithms (5hrs) - Brooke, Rainy
 11. Summarization blurb for each query (5 hrs) - Brooke
