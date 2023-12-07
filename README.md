@@ -7,6 +7,7 @@
 **Team Members:** Joanna Huang (joannah2), Drshika Asher (drshika2), Brooke Novosad (novosad3), Rainy Yan (yuzheng9)   
 **Team Captain:** Brooke Novosad (novosad3)   
 **Team Name:** Autumn Lovers   
+**Presentation:** [Presentation Video](https://illinois.zoom.us/rec/play/OizRZvlvuWb9sveqVCt9TjajIKJxP-rRObKZucfhALXkoHg_Lv-7c3CFPn5PTwLRhwkvU5fXUsZBR90Y.VGuMyo37BcCj1Gat)
 
 **Project Description:** Our application allows you to enter any CS410 related search query to find the 10 most relevant course materials (CS410 Lecture Transcripts and Slides) with blurbs to match your query. 
 
