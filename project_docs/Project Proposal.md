@@ -25,18 +25,18 @@ EDIT 11/30/23: We decided to switch routes and do a Website over a Chrome Extens
 3. Which programming language do you plan to use?
 	Python, React
 
-4. Please justify that the workload of your topic is at least 20*N hours, N being the total number of students in your team. You may list the main tasks to be completed, and the estimated time cost for each task.
-	a. Proposal preparation and revision (5hrs)
-	b. Project scoping and approach analysis (5hrs)
-	c. Collect all documents in CS 410 Coursera (5 hrs) 
-	d. Data clean up (tokenization, remove stop words, etc.) (20 hrs - verification by hand included)
-	e. Data processing, analysis, & storage (5 hrs)
-	f. Chrome extension
-		i. Frontend (5hrs)
-		ii. Backend (5hrs)
-		iii. Data routing (10hrs) 
-		iv. Search algorithms (5hrs)
-	g. Summarization blurb for each query (5 hrs)
-	h. Verification (5 hrs)
-	i. Group Meetings / Project Synchronization (3 hrs)
-	j. Presentation (2hrs)
+4. Please justify that the workload of your topic is at least 20*N hours, N being the total number of students in your team. You may list the main tasks to be completed, and the estimated time cost for each task.   
+	a. Proposal preparation and revision (5hrs)   
+	b. Project scoping and approach analysis (5hrs)   
+	c. Collect all documents in CS 410 Coursera (5 hrs)    
+	d. Data clean up (tokenization, remove stop words, etc.) (20 hrs - verification by hand included)   
+	e. Data processing, analysis, & storage (5 hrs)   
+	f. Chrome extension   
+		i. Frontend (5hrs)   
+		ii. Backend (5hrs)   
+		iii. Data routing (10hrs)    
+		iv. Search algorithms (5hrs)   
+	g. Summarization blurb for each query (5 hrs)   
+	h. Verification (5 hrs)   
+	i. Group Meetings / Project Synchronization (3 hrs)   
+	j. Presentation (2hrs)   
